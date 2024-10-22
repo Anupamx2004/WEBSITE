@@ -116,16 +116,32 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Content Showcase Section (3x2 Grid) */
+/* Content Showcase Section */
 #content {
   padding: 50px;
   text-align: center;
   background-color: #fff;
 }
 
+/* Full-width content card */
+.content-card.full-width {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.content-card.full-width img {
+  width: 100%;
+  height: auto;
+}
+
+/* Grid layout for the remaining products */
 .content-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
   grid-gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -152,6 +168,7 @@ nav ul li a:hover {
   margin-top: 10px;
   color: #333;
 }
+
 
 /* Gallery Section */
 #gallery {
