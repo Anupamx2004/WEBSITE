@@ -169,6 +169,87 @@ nav ul li a:hover {
   color: #333;
 }
 
+/* Specific Section: Department of Human Health and Family Skills */
+#content .human-health-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for product 5 and 6 */
+  grid-gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#content .human-health-grid .content-card img {
+  width: 100%;
+  height: auto; /* Keep aspect ratio */
+}
+
+#content .human-health-grid .content-card {
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+/* Additional Grid layout for products 8 and 9 */
+.additional-products-grid {
+  display: flex;
+  justify-content: center;  /* Centers Product 8 and 9 horizontally */
+  gap: 20px;  /* Equal spacing between Product 8 and 9 */
+  margin-top: 30px;
+}
+
+.additional-products-grid .content-card {
+  width: 100%; /* Ensure full width */
+  max-width: 300px; /* Set max width consistent with other content cards */
+  text-align: center;  /* Centers text and content */
+  background-color: #f9f9f9;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.additional-products-grid .content-card:hover {
+  transform: scale(1.05);
+}
+
+.additional-products-grid .content-card img {
+  width: 100%; /* Ensure full width of container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.additional-products-grid .content-card p {
+  margin-top: 10px;
+  color: #333;
+}
+
+/* HFN department 2x2 grid layout */
+.hfn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-gap: 20px; /* Space between the grid items */
+  max-width: 800px; /* Adjust as per your layout */
+  margin: 0 auto; /* Center the grid */
+}
+
+.hfn-grid .content-card {
+  padding: 15px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.hfn-grid .content-card img {
+  width: 100%;
+  height: auto;
+}
+
+.hfn-grid .content-card:hover {
+  transform: scale(1.05);
+}
+
+
+
 
 /* Gallery Section */
 #gallery {
