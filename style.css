@@ -76,11 +76,10 @@ nav ul li a:hover {
 }
 
 #about img.about-img {
-  width: 350px;
+  width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto 20px;
 }
+
 
 #about p {
   font-size: 18px;
