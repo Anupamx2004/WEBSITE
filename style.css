@@ -250,39 +250,86 @@ nav ul li a:hover {
 
 
 
-/* Gallery Section */
-#gallery {
-  padding: 50px;
-  text-align: center;
-  background-color: #ffebe6;
+/* Container for each slide */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
 }
 
-.gallery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+/* Individual slides */
+.slide {
+  display: none;
+  width: 100%;
+  height: auto;
 }
 
-.gallery-grid img {
-  width: 30%;
-  margin: 15px;
-  border-radius: 10px;
-  transition: transform 0.3s;
+/* Style for the navigation dots */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
 }
 
-.gallery-grid img:hover {
-  transform: scale(1.1);
+.active {
+  background-color: #717171;
 }
 
-/* Contact Details Section */
-#contact {
-  padding: 50px;
-  text-align: center;
-  background-color: #fff;
-}
-
-#contact p {
+/* Navigation button styles */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(44, 44, 44);
+  font-weight: bold;
   font-size: 18px;
-  margin: 10px 0;
-  color: #333;
+  transition: 0.3s;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
+
+.prev {
+  left: 0; /* Position the left button at the left edge */
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0; /* Position the right button at the right edge */
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Optional styling for images */
+.slide img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center align the image */
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from { opacity: .4 }
+  to { opacity: 1 }
+}
+/* Center align the Gallery and Contact Us section headings and content */
+#gallery, #contact {
+  text-align: center;
+}
+
